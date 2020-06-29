@@ -1,4 +1,4 @@
-package jp.co.solxyz.lessons.servlet.dao.q01.servlet;
+package level2;
 
 import java.io.IOException;
 
@@ -8,20 +8,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import jp.co.solxyz.lessons.servlet.dao.q01.dao.CustomerDao;
-
 /**
- * Servlet implementation class IndexServlet
+ * Servlet implementation class Level2Servlet
  */
-@WebServlet("/dao01list")
-public class ListServlet extends HttpServlet {
+@WebServlet("/level2")
+public class Level2Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public ListServlet() {
+	public Level2Servlet() {
 		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -29,11 +28,8 @@ public class ListServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		CustomerDao customerDao = new CustomerDao();
-
-		request.setAttribute("CUST_LIST", customerDao.getCustomerList());
-
-		request.getRequestDispatcher("/WEB-INF/dao/q01/customer-list.jsp").forward(request, response);
+		// TODO Auto-generated method stub
+		request.getRequestDispatcher("/WEB-INF/level2.jsp").forward(request, response);
 	}
 
 	/**
@@ -41,6 +37,7 @@ public class ListServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 
