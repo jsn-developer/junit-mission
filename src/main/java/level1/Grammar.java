@@ -5,10 +5,20 @@ import java.util.List;
 
 public class Grammar {
 
+	/**
+	 * 奇数判定
+	 * @param num 数値
+	 * @return 引数が奇数:true 引数が偶数:false
+	 */
 	public boolean isOddNumber(int num) {
 		return num % 2 == 1;
 	}
 
+	/**
+	 * 時間をもとに適切な挨拶を返す
+	 * @param time 時間
+	 * @return 挨拶メッセージ
+	 */
 	public String greet(int time) {
 
 		// ガード
@@ -31,6 +41,10 @@ public class Grammar {
 		return msg;
 	}
 
+	/**
+	 * メンバーリストを取得する
+	 * @return メンバーリスト
+	 */
 	public List<String> getMember() {
 		List<String> list = new ArrayList<>();
 
